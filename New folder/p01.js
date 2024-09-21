@@ -4,9 +4,7 @@ const images = [
     '3.jpg',
     '4.jpg',
     '5.jpg',
-    
-];
-
+    ];
 let currentIndex = 0;
 const carouselContainer = document.querySelector('.carousel-container');
 
