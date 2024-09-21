@@ -1,0 +1,62 @@
+body { 
+ background-color:#74c69d;
+   font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    background-color: #2d6a4f; /* Change this to your desired color */
+    color: white; /* Optional: Change text color for better contrast */
+    padding: 10px; /* Optional: Add some padding around the text */
+    text-align: center; /* Optional: Center the text */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+#carousel {
+    position: relative;
+    max-width: 100%; /* Make the carousel full width */
+    margin: 20px auto;
+    overflow: hidden; /* Hide overflow */
+}
+
+.carousel-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+}
+
+.carousel-container img {
+    width: calc(100% - 20px); /* Reduce width for spacing */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 70vh; /* Set maximum height to 70% of the viewport height */
+    object-fit: cover; /* Crop the image to fit */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px; /* Add margin between images */
+}
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10; /* Ensure buttons are on top */
+}
+
+#prev { left: 10px; }
+#next { right: 10px; }
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10; /* Ensures buttons are above images */
+}
+
